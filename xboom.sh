@@ -154,7 +154,7 @@ printf "\e[0m\e[92m        $ORANGE ✯ Name    :$WHITE Krishna\e[0m\n" | pv -qL 
 echo ""
 printf "\e[0m\e[92m        $ORANGE ✯ Alias   :$WHITE Kv Justin\e[0m\n" | pv -qL 12
 echo ""
-printf "\e[0m\e[92m        $ORANGE ✯ Version :$WHITE 2.0\e[0m\n" | pv -qL 12
+printf "\e[0m\e[92m        $ORANGE ✯ Version :$WHITE 2.1\e[0m\n" | pv -qL 12
 echo ""
 printf "\e[0m\e[92m        $ORANGE ✯ Group   :$WHITE CSE Thopulu\e[0m\n" | pv -qL 12
 sleep 5
