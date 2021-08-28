@@ -59,7 +59,7 @@ sleep 1
 echo -e "            \e[36m$WHITE Group:$BLUE CSE Thopulu"
 echo ""
 sleep 1
-echo -e "            \e[36m$WHITE Project Name:$MAGENTA XBOOM V2.0"
+echo -e "            \e[36m$WHITE Project Name:$MAGENTA XBOOM V3.1"
 echo ""
 
 }
@@ -154,7 +154,7 @@ printf "\e[0m\e[92m        $ORANGE ✯ Name    :$WHITE Krishna\e[0m\n" | pv -qL 
 echo ""
 printf "\e[0m\e[92m        $ORANGE ✯ Alias   :$WHITE Kv Justin\e[0m\n" | pv -qL 12
 echo ""
-printf "\e[0m\e[92m        $ORANGE ✯ Version :$WHITE 2.0\e[0m\n" | pv -qL 12
+printf "\e[0m\e[92m        $ORANGE ✯ Version :$WHITE 3.1\e[0m\n" | pv -qL 12
 echo ""
 printf "\e[0m\e[92m        $ORANGE ✯ Group   :$WHITE CSE Thopulu\e[0m\n" | pv -qL 12
 sleep 5
@@ -393,7 +393,7 @@ echo "$WHITE------------------------"
 echo -e "\e[34m $GREEN✯ XBOOM Works Only In India :)"
 echo "$WHITE------------------------------"
 sleep 1
-printf "\e[1;92m[\e[0m 1\e[1;92m ]\e[0m>>>\e[1;33m MASS BOMBING V2.0 \e[0m\n"
+printf "\e[1;92m[\e[0m 1\e[1;92m ]\e[0m>>>\e[1;33m MASS BOMBING V3.1 \e[0m\n"
 printf "\e[1;92m[\e[0m 2\e[1;92m ]\e[0m>>>\e[1;33m ANONYMOUS MSG \e[0m\n"
 printf "\e[1;92m[\e[0m 3\e[1;92m ]\e[0m>>>\e[1;33m UPDATE \e[0m\n"
 printf "\e[1;92m[\e[0m 4\e[1;92m ]\e[0m>>>\e[1;33m ABOUT \e[0m\n"
