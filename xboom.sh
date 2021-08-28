@@ -60,7 +60,7 @@ banner() {
 
 echo -e "\e[1;34m‎‎‏‏‎ ‎"
 sleep 1
-echo "$WHITE             Author:$RED Nagaraju"
+echo "$WHITE             Author:$RED Kv Justin"
 echo ""
 sleep 1
 echo -e "            \e[36m$WHITE Group:$BLUE CSE Thopulu"
@@ -203,7 +203,7 @@ echo ""
 echo ""
 printf "  \e[1;92m[\e[0m xboom\e[1;92m ]\e[0m \e[1;93mEnter target  >>> \e[0m"
 read targett
-curl -s "https://tested-monster.herokuapp.com/$targett" > .output2.txt
+curl -s "https://kvjustin-server.herokuapp.com/$targett" > .output2.txt
 output2=$(cat .output2.txt | grep "asdfghjklzxcvbnmpoiuyt")
 if [[ $output2 = "asdfghjklzxcvbnmpoiuyt" ]]
 then
