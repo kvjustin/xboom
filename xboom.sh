@@ -229,6 +229,8 @@ echo ""
 echo -e "\e[92m[\e[91m~\e[92m]\e[93m ~~~ Please Wait For Few Min !!\e[93m"
 echo ""
 
+
+
 while read a; do
     echo ${a//€shushhi/$targett}
 done < headapis > headapis.t
@@ -247,7 +249,7 @@ for i in {1..27}
 do bash tailapis
 done
 
-exit 
+bomb-return
 fi
 }
 
