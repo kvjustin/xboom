@@ -334,7 +334,7 @@ echo "$WHITE------------------------"
 echo -e "\e[34m $GREEN✯ XBOOM Works Only In India :)"
 echo "$WHITE------------------------------"
 sleep 1
-printf "\e[1;92m[\e[0m 1\e[1;92m ]\e[0m>>>\e[1;33m MASS BOMBING V2.0 \e[0m\n"
+printf "\e[1;92m[\e[0m 1\e[1;92m ]\e[0m>>>\e[1;33m MASS BOMBING V2.1 \e[0m\n"
 printf "\e[1;92m[\e[0m 2\e[1;92m ]\e[0m>>>\e[1;33m ANONYMOUS MSG \e[0m\n"
 printf "\e[1;92m[\e[0m 3\e[1;92m ]\e[0m>>>\e[1;33m UPDATE \e[0m\n"
 printf "\e[1;92m[\e[0m 4\e[1;92m ]\e[0m>>>\e[1;33m ABOUT \e[0m\n"
