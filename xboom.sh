@@ -18,6 +18,8 @@ BLACK="$(printf '\e[30m')"
 apt-get install -y git curl wget pv espeak
 
 #    Check Internet
+apt update
+apt upgrade
 wget -q --spider https://google.com
 
 if [ $? -eq 0 ]; then
