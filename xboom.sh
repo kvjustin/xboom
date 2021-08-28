@@ -282,8 +282,8 @@ echo "     $WHITE █▀█ █░▀█ █▄█ █░▀█ ░█�
 echo ""
 echo ""
 printf "\e[1;92m[\e[0m 1\e[1;92m ]\e[0m>>>\e[1;33m Server 1 \e[0m\n"
-echo ""
 printf "\e[1;92m[\e[0m 2\e[1;92m ]\e[0m>>>\e[1;33m Server 2 \e[0m\n"
+echo ""
 printf "\e[1;31mSelect Server\e[0m−−⋙⋙⋙ "
 echo ""
 read options
