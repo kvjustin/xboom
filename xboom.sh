@@ -301,10 +301,9 @@ echo "     $WHITE █▀█ █░▀█ █▄█ █░▀█ ░█�
 echo ""
 echo ""
 printf "\e[1;92m[\e[0m 1\e[1;92m ]\e[0m>>>\e[1;33m Server 1 \e[0m\n"
-echo ""
 printf "\e[1;92m[\e[0m 2\e[1;92m ]\e[0m>>>\e[1;33m Server 2 \e[0m\n"
-printf "\e[1;31m Select Option !! \e[0m−−⋙⋙⋙ "
 echo ""
+printf "\e[1;31m Select Option !! \e[0m−−⋙⋙⋙ "
 read options
 if [ "$options" -eq "1" ];then
         anon-serv1
