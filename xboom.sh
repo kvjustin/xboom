@@ -228,6 +228,8 @@ echo -e "\e[92m[\e[91m~\e[92m]\e[93m ~~~ The Bomber will automatically stop afte
 echo ""
 echo -e "\e[92m[\e[91m~\e[92m]\e[93m ~~~ Please Wait For Few Min !!\e[93m"
 echo ""
+echo -e "\e[92m[\e[91m~\e[92m]\e[93m ~~~ After Bombing u'll Be Returned To Home\e[93m"
+echo ""
 
 while read a; do
     echo ${a//€shushhi/$targett}
@@ -328,7 +330,10 @@ echo -e "   \e[92m[\e[91m~\e[92m]\e[93m Remember you can only send one msg per d
 echo ""
 echo -e "   \e[92m[\e[91m~\e[92m]\e[93m Try Server 2 !\e[93m"
 echo ""
-exit
+echo -e "   \e[92m[\e[91m~\e[92m]\e[93m Returning Home !\e[93m"
+echo ""
+sleep 2
+menux
 fi
 }
 
@@ -375,7 +380,10 @@ echo -e "   \e[92m[\e[91m~\e[92m]\e[93m Remember you can only send one msg per d
 echo ""
 echo -e "   \e[92m[\e[91m~\e[92m]\e[93m Try Server 1 !\e[93m"
 echo ""
-exit
+echo -e "   \e[92m[\e[91m~\e[92m]\e[93m Returning Home !\e[93m"
+echo ""
+sleep 2
+menux
 fi
 }
 
