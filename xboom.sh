@@ -249,7 +249,7 @@ for i in {1..27}
 do bash tailapis
 done
 
-exit 
+menux
 fi
 }
 
