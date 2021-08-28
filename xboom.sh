@@ -228,8 +228,6 @@ echo -e "\e[92m[\e[91m~\e[92m]\e[93m ~~~ The Bomber will automatically stop afte
 echo ""
 echo -e "\e[92m[\e[91m~\e[92m]\e[93m ~~~ Please Wait For Few Min !!\e[93m"
 echo ""
-echo -e "\e[92m[\e[91m~\e[92m]\e[93m ~~~ After Bombing u'll Be Returned To Home\e[93m"
-echo ""
 
 while read a; do
     echo ${a//€shushhi/$targett}
@@ -249,10 +247,29 @@ for i in {1..27}
 do bash tailapis
 done
 
-menux
+exit 
 fi
 }
 
+bomb-return(){
+clear
+echo ""
+echo "$WHITE█▀▄▀█ ▄▀█ █▀ █▀   █▄▄ █▀█ █▀▄▀█ █▄▄ █ █▄░█ █▀▀"
+echo "$RED█░▀░█ █▀█ ▄█ ▄█   █▄█ █▄█ █░▀░█ █▄█ █ █░▀█ █▄█"
+echo ""
+echo ""
+printf "\e[1;92m[\e[0m 1\e[1;92m ]\e[0m>>>\e[1;33m Bomb Again... \e[0m\n"
+printf "\e[1;92m[\e[0m 2\e[1;92m ]\e[0m>>>\e[1;33m Go Back To Home \e[0m\n"
+echo ""
+printf "\e[1;31m Select Option !! \e[0m−−⋙⋙⋙ "
+read options
+if [ "$options" -eq "1" ];then
+        bombing-menu
+fi
+if [ "$options" -eq "2" ];then
+        menux
+fi
+}
 
 anonmsg(){
 clear
@@ -279,14 +296,15 @@ anon-msg(){
 clear
 echo ""
 
-echo "$RED ▄▀█ █▄░█ █▀█ █▄░█ █▄█ █▀▄▀█ █▀█ █░█ █▀   █▀▄▀█ █▀ █▀▀"
-echo "$WHITE █▀█ █░▀█ █▄█ █░▀█ ░█░ █░▀░█ █▄█ █▄█ ▄█   █░▀░█ ▄█ █▄█"
+echo "     $RED ▄▀█ █▄░█ █▀█ █▄░█ █▄█ █▀▄▀█ █▀█ █░█ █▀   █▀▄▀█ █▀ █▀▀"
+echo "     $WHITE █▀█ █░▀█ █▄█ █░▀█ ░█░ █░▀░█ █▄█ █▄█ ▄█   █░▀░█ ▄█ █▄█"
 echo ""
 echo ""
 printf "\e[1;92m[\e[0m 1\e[1;92m ]\e[0m>>>\e[1;33m Server 1 \e[0m\n"
-printf "\e[1;92m[\e[0m 2\e[1;92m ]\e[0m>>>\e[1;33m Server 2 \e[0m\n"
 echo ""
-printf "\e[1;31mSelect Server\e[0m−−⋙⋙⋙ "
+printf "\e[1;92m[\e[0m 2\e[1;92m ]\e[0m>>>\e[1;33m Server 2 \e[0m\n"
+printf "\e[1;31m Select Option !! \e[0m−−⋙⋙⋙ "
+echo ""
 read options
 if [ "$options" -eq "1" ];then
         anon-serv1
@@ -297,17 +315,10 @@ fi
 }
 
 anon-serv1(){
-clear
-echo ""
-
-echo "$RED ▄▀█ █▄░█ █▀█ █▄░█ █▄█ █▀▄▀█ █▀█ █░█ █▀   █▀▄▀█ █▀ █▀▀"
-echo "$WHITE █▀█ █░▀█ █▄█ █░▀█ ░█░ █░▀░█ █▄█ █▄█ ▄█   █░▀░█ ▄█ █▄█"
-echo ""
-echo ""
-printf "      \e[1;92m[\e[0m xboom\e[1;92m ]\e[0m \e[1;93mEnter target  >>> \e[0m"
+printf "      \e[1;92m[\e[0m xlr8\e[1;92m ]\e[0m \e[1;93mEnter target  >>> \e[0m"
 read smstarget
 echo ""
-printf "      \e[1;92m[\e[0m xboom\e[1;92m ]\e[0m \e[1;93mEnter Your Message  >>> \e[0m"
+printf "      \e[1;92m[\e[0m xlr8\e[1;92m ]\e[0m \e[1;93mEnter Your Message  >>> \e[0m"
 read text
 echo ""
 
@@ -336,10 +347,8 @@ echo -e "   \e[92m[\e[91m~\e[92m]\e[93m Remember you can only send one msg per d
 echo ""
 echo -e "   \e[92m[\e[91m~\e[92m]\e[93m Try Server 2 !\e[93m"
 echo ""
-echo -e "   \e[92m[\e[91m~\e[92m]\e[93m Returning Home !\e[93m"
-echo ""
 sleep 2
-menux
+anon-return
 fi
 }
 
@@ -386,10 +395,29 @@ echo -e "   \e[92m[\e[91m~\e[92m]\e[93m Remember you can only send one msg per d
 echo ""
 echo -e "   \e[92m[\e[91m~\e[92m]\e[93m Try Server 1 !\e[93m"
 echo ""
-echo -e "   \e[92m[\e[91m~\e[92m]\e[93m Returning Home !\e[93m"
-echo ""
 sleep 2
-menux
+anon-return
+fi
+}
+
+anon-return(){
+clear
+echo ""
+
+echo "$RED ▄▀█ █▄░█ █▀█ █▄░█ █▄█ █▀▄▀█ █▀█ █░█ █▀   █▀▄▀█ █▀ █▀▀"
+echo "$WHITE █▀█ █░▀█ █▄█ █░▀█ ░█░ █░▀░█ █▄█ █▄█ ▄█   █░▀░█ ▄█ █▄█"
+echo ""
+echo ""
+printf "\e[1;92m[\e[0m 1\e[1;92m ]\e[0m>>>\e[1;33m Retry... \e[0m\n"
+printf "\e[1;92m[\e[0m 2\e[1;92m ]\e[0m>>>\e[1;33m Go Back To Home \e[0m\n"
+echo ""
+printf "\e[1;31m Select Option !! \e[0m−−⋙⋙⋙ "
+read options
+if [ "$options" -eq "1" ];then
+        anon-msg
+fi
+if [ "$options" -eq "2" ];then
+        menux
 fi
 }
 
