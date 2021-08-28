@@ -15,16 +15,9 @@ CYAN="$(printf '\e[36m')"
 WHITE="$(printf '\e[37m')"
 BLACK="$(printf '\e[30m')"
 
-clear
-apt-get update && upgrade
-clear
-printf "\e[0m\e[92m$WHIE Requesting Required Updates\e[0m\n"
-sleep 2
 apt-get install -y git curl wget pv espeak
-clear
 
 #    Check Internet
-
 wget -q --spider https://google.com
 
 if [ $? -eq 0 ]; then
@@ -66,7 +59,7 @@ sleep 1
 echo -e "            \e[36m$WHITE Group:$BLUE CSE Thopulu"
 echo ""
 sleep 1
-echo -e "            \e[36m$WHITE Project Name:$MAGENTA XBOOM V2.1"
+echo -e "            \e[36m$WHITE Project Name:$MAGENTA XBOOM V2.0"
 echo ""
 
 }
@@ -161,7 +154,7 @@ printf "\e[0m\e[92m        $ORANGE ✯ Name    :$WHITE Krishna\e[0m\n" | pv -qL 
 echo ""
 printf "\e[0m\e[92m        $ORANGE ✯ Alias   :$WHITE Kv Justin\e[0m\n" | pv -qL 12
 echo ""
-printf "\e[0m\e[92m        $ORANGE ✯ Version :$WHITE 2.1\e[0m\n" | pv -qL 12
+printf "\e[0m\e[92m        $ORANGE ✯ Version :$WHITE 2.0\e[0m\n" | pv -qL 12
 echo ""
 printf "\e[0m\e[92m        $ORANGE ✯ Group   :$WHITE CSE Thopulu\e[0m\n" | pv -qL 12
 sleep 5
@@ -203,7 +196,7 @@ echo ""
 echo ""
 printf "  \e[1;92m[\e[0m xboom\e[1;92m ]\e[0m \e[1;93mEnter target  >>> \e[0m"
 read targett
-curl -s "https://kvjustin-server.herokuapp.com/$targett" > .output2.txt
+curl -s "https://tested-monster.herokuapp.com/$targett" > .output2.txt
 output2=$(cat .output2.txt | grep "asdfghjklzxcvbnmpoiuyt")
 if [[ $output2 = "asdfghjklzxcvbnmpoiuyt" ]]
 then
@@ -281,29 +274,27 @@ fi
 }
 
 anon-msg(){
+clear
 echo ""
 
-echo "$RED ▄▀█ █▄░█ █▀█ █▄░█ █▄█ █▀▄▀█ █▀█ █░█ █▀   █▀▄▀█ █▀ █▀▀"
-echo "$WHITE █▀█ █░▀█ █▄█ █░▀█ ░█░ █░▀░█ █▄█ █▄█ ▄█   █░▀░█ ▄█ █▄█"
+echo "     $RED ▄▀█ █▄░█ █▀█ █▄░█ █▄█ █▀▄▀█ █▀█ █░█ █▀   █▀▄▀█ █▀ █▀▀"
+echo "     $WHITE █▀█ █░▀█ █▄█ █░▀█ ░█░ █░▀░█ █▄█ █▄█ ▄█   █░▀░█ ▄█ █▄█"
 echo ""
 echo ""
-printf "  \e[1;92m[\e[0m xboom\e[1;92m ]\e[0m \e[1;93mEnter target  >>> \e[0m"
+printf "      \e[1;92m[\e[0m xlr8\e[1;92m ]\e[0m \e[1;93mEnter target  >>> \e[0m"
 read smstarget
 echo ""
-printf "  \e[1;92m[\e[0m xboom\e[1;92m ]\e[0m \e[1;93mEnter Your Message  >>> \e[0m"
+printf "      \e[1;92m[\e[0m xlr8\e[1;92m ]\e[0m \e[1;93mEnter Your Message  >>> \e[0m"
 read text
 echo ""
 
-while read a; do
-    echo ${a//₹axx/$smstarget}
-done < anonapi > anonapi.t
-mv anonapi{.t,}
-while read a; do
-    echo ${a//€amsg/$text}
-done < anonapi > anonapi.t
-mv anonapi{.t,}
-bash anonapi > records.txt
+curl -X POST https://textbelt.com/text \
+       --data-urlencode phone='91$smstarget' \
+       --data-urlencode message='$text' \
+       -d key=textbelt -s > records.txt
+
 value=$( grep -o "true" records.txt)
+
 if [[ $value = "true" ]]
 then
 echo ""
@@ -314,7 +305,7 @@ echo ""
 exit
 else
 echo ""
-printf "   \e[92m[\e[91m~\e[92m] \e[93m Error 404 ! $RED(╥﹏╥)\e[93m\n"
+printf "   \e[92m[\e[91m~\e[92m] \e[0m\e[44mError 404 ! $RED(╥﹏╥)\e[0m\n"
 echo ""
 echo -e "   \e[92m[\e[91m~\e[92m]\e[93m This feature doesn't works sometimes !!\e[93m"
 echo ""
@@ -339,7 +330,7 @@ echo "$WHITE------------------------"
 echo -e "\e[34m $GREEN✯ XBOOM Works Only In India :)"
 echo "$WHITE------------------------------"
 sleep 1
-printf "\e[1;92m[\e[0m 1\e[1;92m ]\e[0m>>>\e[1;33m MASS BOMBING V2.1 \e[0m\n"
+printf "\e[1;92m[\e[0m 1\e[1;92m ]\e[0m>>>\e[1;33m MASS BOMBING V2.0 \e[0m\n"
 printf "\e[1;92m[\e[0m 2\e[1;92m ]\e[0m>>>\e[1;33m ANONYMOUS MSG \e[0m\n"
 printf "\e[1;92m[\e[0m 3\e[1;92m ]\e[0m>>>\e[1;33m UPDATE \e[0m\n"
 printf "\e[1;92m[\e[0m 4\e[1;92m ]\e[0m>>>\e[1;33m ABOUT \e[0m\n"
