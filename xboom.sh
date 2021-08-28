@@ -304,10 +304,10 @@ echo "$RED ▄▀█ █▄░█ █▀█ █▄░█ █▄█ █
 echo "$WHITE █▀█ █░▀█ █▄█ █░▀█ ░█░ █░▀░█ █▄█ █▄█ ▄█   █░▀░█ ▄█ █▄█"
 echo ""
 echo ""
-printf "      \e[1;92m[\e[0m xlr8\e[1;92m ]\e[0m \e[1;93mEnter target  >>> \e[0m"
+printf "      \e[1;92m[\e[0m xboom\e[1;92m ]\e[0m \e[1;93mEnter target  >>> \e[0m"
 read smstarget
 echo ""
-printf "      \e[1;92m[\e[0m xlr8\e[1;92m ]\e[0m \e[1;93mEnter Your Message  >>> \e[0m"
+printf "      \e[1;92m[\e[0m xboom\e[1;92m ]\e[0m \e[1;93mEnter Your Message  >>> \e[0m"
 read text
 echo ""
 
