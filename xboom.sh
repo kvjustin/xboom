@@ -281,6 +281,20 @@ echo "     $RED ▄▀█ █▄░█ █▀█ █▄░█ █▄█�
 echo "     $WHITE █▀█ █░▀█ █▄█ █░▀█ ░█░ █░▀░█ █▄█ █▄█ ▄█   █░▀░█ ▄█ █▄█"
 echo ""
 echo ""
+printf "\e[1;31mSelect Server\e[0m−−⋙⋙⋙ "
+printf "\e[1;92m[\e[0m 1\e[1;92m ]\e[0m>>>\e[1;33m Server 1 \e[0m\n"
+printf "\e[1;92m[\e[0m 2\e[1;92m ]\e[0m>>>\e[1;33m Server 2 \e[0m\n"
+echo ""
+read options
+if [ "$options" -eq "1" ];then
+        anon-serv1
+fi
+if [ "$options" -eq "2" ];then
+        anon-serv2
+fi
+}
+
+anon-serv1(){
 printf "      \e[1;92m[\e[0m xlr8\e[1;92m ]\e[0m \e[1;93mEnter target  >>> \e[0m"
 read smstarget
 echo ""
@@ -310,6 +324,55 @@ echo ""
 echo -e "   \e[92m[\e[91m~\e[92m]\e[93m This feature doesn't works sometimes !!\e[93m"
 echo ""
 echo -e "   \e[92m[\e[91m~\e[92m]\e[93m Remember you can only send one msg per day !\e[93m"
+echo ""
+echo -e "   \e[92m[\e[91m~\e[92m]\e[93m Try Server 2 !\e[93m"
+echo ""
+exit
+fi
+}
+
+anon-serv2(){
+clear
+echo ""
+
+echo "$RED ▄▀█ █▄░█ █▀█ █▄░█ █▄█ █▀▄▀█ █▀█ █░█ █▀   █▀▄▀█ █▀ █▀▀"
+echo "$WHITE █▀█ █░▀█ █▄█ █░▀█ ░█░ █░▀░█ █▄█ █▄█ ▄█   █░▀░█ ▄█ █▄█"
+echo ""
+echo ""
+printf "  \e[1;92m[\e[0m xboom\e[1;92m ]\e[0m \e[1;93mEnter target  >>> \e[0m"
+read smstarget
+echo ""
+printf "  \e[1;92m[\e[0m xboom\e[1;92m ]\e[0m \e[1;93mEnter Your Message  >>> \e[0m"
+read text
+echo ""
+
+while read a; do
+    echo ${a//₹axx/$smstarget}
+done < anonapi > anonapi.t
+mv anonapi{.t,}
+while read a; do
+    echo ${a//€amsg/$text}
+done < anonapi > anonapi.t
+mv anonapi{.t,}
+bash anonapi > records.txt
+value=$( grep -o "true" records.txt)
+if [[ $value = "true" ]]
+then
+echo ""
+printf "   \e[92m[\e[91m~\e[92m] \e[0m\e[44mSuccess !!\e[0m\n"
+echo ""
+echo -e "   \e[92m[\e[91m~\e[92m]\e[93m Please be pateint, Msgs take some time to get delivered !!\e[93m"
+echo ""
+exit
+else
+echo ""
+printf "   \e[92m[\e[91m~\e[92m] \e[93m Error 404 ! $RED(╥﹏╥)\e[93m\n"
+echo ""
+echo -e "   \e[92m[\e[91m~\e[92m]\e[93m This feature doesn't works sometimes !!\e[93m"
+echo ""
+echo -e "   \e[92m[\e[91m~\e[92m]\e[93m Remember you can only send one msg per day !\e[93m"
+echo ""
+echo -e "   \e[92m[\e[91m~\e[92m]\e[93m Try Server 1 !\e[93m"
 echo ""
 exit
 fi
