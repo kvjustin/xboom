@@ -15,11 +15,11 @@ CYAN="$(printf '\e[36m')"
 WHITE="$(printf '\e[37m')"
 BLACK="$(printf '\e[30m')"
 
+apt-get update && upgrade
 apt-get install -y git curl wget pv espeak
 
 #    Check Internet
-apt update
-apt upgrade
+
 wget -q --spider https://google.com
 
 if [ $? -eq 0 ]; then
