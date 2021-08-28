@@ -61,7 +61,7 @@ sleep 1
 echo -e "            \e[36m$WHITE Group:$BLUE CSE Thopulu"
 echo ""
 sleep 1
-echo -e "            \e[36m$WHITE Project Name:$MAGENTA XBOOM V2.0"
+echo -e "            \e[36m$WHITE Project Name:$MAGENTA XBOOM V2.1"
 echo ""
 
 }
