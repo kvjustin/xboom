@@ -18,7 +18,7 @@ BLACK="$(printf '\e[30m')"
 clear
 apt-get update && upgrade
 clear
-printf "\e[0m\e[92m        $WHIE Requesting Required Updates\e[0m\n"
+printf "\e[0m\e[92m$WHIE Requesting Required Updates\e[0m\n"
 sleep 2
 apt-get install -y git curl wget pv espeak
 clear
