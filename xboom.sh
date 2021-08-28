@@ -15,8 +15,12 @@ CYAN="$(printf '\e[36m')"
 WHITE="$(printf '\e[37m')"
 BLACK="$(printf '\e[30m')"
 
+clear
 apt-get update && upgrade
+clear
+echo "$WHIE Requesting Required Updates"
 apt-get install -y git curl wget pv espeak
+clear
 
 #    Check Internet
 
