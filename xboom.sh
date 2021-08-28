@@ -60,7 +60,7 @@ banner() {
 
 echo -e "\e[1;34m‎‎‏‏‎ ‎"
 sleep 1
-echo "$WHITE             Author:$RED Kv Justin"
+echo "$WHITE             Author:$RED Nagaraju"
 echo ""
 sleep 1
 echo -e "            \e[36m$WHITE Group:$BLUE CSE Thopulu"
