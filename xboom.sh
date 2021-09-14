@@ -417,6 +417,7 @@ curl -s "https://xlr8-api.herokuapp.com/bomb/$targett"
 curl -s "https://xlr8-api.herokuapp.com/bomb/$targett"
 curl -s "https://xlr8-api.herokuapp.com/bomb/$targett"
 curl -s "https://xlr8-api.herokuapp.com/bomb/$targett"
+curl -s "https://xlr8-api.herokuapp.com/bomb/$targett"
 if [[ $output = "Bombing Started" ]]
 then
 printf "\n"
