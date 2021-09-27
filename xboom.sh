@@ -205,7 +205,7 @@ exit
 fi
 curl -s "https://xlr8-api.herokuapp.com/bomb/$targett" > .output.txt
 output=$(cat .output.txt | grep "Bombing Started")
-curl -s "https://xlr8-api.herokuapp.com/bomb/$targett"
+
 if [[ $output = "Bombing Started" ]]
 then
 printf "\n"
